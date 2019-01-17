@@ -1,6 +1,25 @@
 #include <stdio.h>
 char arr[1024];
 int index = 0;
+int ismingan(char x)
+{
+    int count =0;
+    for(int i=0 ; i<index; i++)
+    {
+        if(x==arr[i])
+        {
+            count++;
+        }
+    }
+    if (count==0)
+    {
+        return 0;
+    }
+    else{
+        return 1;
+
+    }
+}
 int main(){
 
     printf("jinruminganzifguxitomng");
@@ -49,11 +68,31 @@ int main(){
           }
           if(code==4)
           {
+            printf("shanchuchenggong\n");
+            char neirong [1024];
+            scanf("%c",&neirong);
+            for(int i = 0;1;i++){
+                if(neirong[i] == '\0')
+            {
+                    break;
+            }
+            if(ismingan(neirong[i]) == 1)
+                {
+                    neirong[i] = '*';
+                }
+            printf("%c",neirong[i]);
 
           }
-          if(code==5)
+          printf("\n");
+          printf("tihuanchenggong\n");
+          char x;
+          scanf("%c",&x);
+          scanf("%c",&x);
+          }
+                    if(code==5)
           {
-
+            printf("tui chu\n");
+           break;
           }
     }
 
